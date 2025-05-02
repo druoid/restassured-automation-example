@@ -1,12 +1,12 @@
 package tests;
 
-import io.restassured.RestAssured;
+import static org.hamcrest.Matchers.notNullValue;
 import org.junit.jupiter.api.Test;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
 
-public class AutomationExerciseAPITest {
+public class GetAllProductsListAPITest {
 
     @Test
     public void testGetAllProducts() {
